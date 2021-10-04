@@ -1,0 +1,43 @@
+<head>
+    <meta charset="utf-8">
+    <title>weather</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <nav class="row" style="background: #337ab7; color: white;">
+        <h1 class="col-md-3 text-center">weather</h1>
+    </nav>
+<br> 
+<br>
+
+<form method="post" action="/" class="col-md-6 col-md-offset-3" >
+    <div class="input-group">
+    <input type="text"  name="city" placeholder="Type city name" class="form-control">
+    <div class="input-group-btn">
+    <button type="submit" class="btn btn-primary">
+        <i class="glyphicon glyphicon-search"></i>
+    </div>
+    </button>
+    </div>
+</form> 
+<div class="col-md-6 col-md-offset-3">
+
+<h3>Country Code : {{data.country_code}}</h3>
+<h3>Temperature : {{data.temp}}°C</h3> 
+<h3>Feels Like : {{data.feels_like}}°C</h3>
+<h3>Minimum Temperature : {{data.temp_min}}°C</h3>
+<h3>Maximum Temperature : {{data.temp_max}}°C</h3>
+<h3>Pressure : {{data.pressure}}</h3>
+<h3>Humidity : {{data.humidity}}</h3>
+<h3>Latitude : {{data.lat}}</h3>
+<h3>Longitude : {{data.lon}}</h3>
+</div>
+</body>
